@@ -44,7 +44,7 @@ Create a virtual environment named `stacks`.
 
 Switch into virtual environment using VirtualEnvWrapper tools:
 
-    workon verde
+    workon stacks
 
 Install requirements.txt
 ------------------------
