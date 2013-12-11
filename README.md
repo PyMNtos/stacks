@@ -21,4 +21,3 @@ Installation instructions are located in:
 
 Do NOT use the requirements.txt file in the root of the project as this is used for Heroku.
 
-test edit by exlibris
