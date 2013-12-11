@@ -75,3 +75,19 @@ Then migrate with South:
 
     python manage.py migrate
 
+Boostraping some data
+----------------
+
+After configuring the database, the next thing you'll likely want to do is add some data. While you could create some data to play around with by hand -- copy/pasting from Amazon, there's an easier way. 
+
+We've created some simple manage commands to automate this process:
+
+To _add_ demo data to the database run:
+```
+python manage.py seed
+```
+
+To _remove_ demo data from the database run:
+```
+python manage.py unseed
+```
