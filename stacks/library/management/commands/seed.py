@@ -6,6 +6,7 @@ from library.models import Book
 
 class Command(NoArgsCommand):
     def handle_noargs(self, **options):
+        books = []
         book = Book()
         book.uuid = "aaa"
         book.title = "Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics"
@@ -20,7 +21,7 @@ class Command(NoArgsCommand):
         """
         book.isbn10 = "1449319270"
         book.publisher = "O'reilly"
-        book.save()
+        books.append(book)
 
         book = Book()
         book.uuid = "aab"
@@ -36,7 +37,7 @@ class Command(NoArgsCommand):
         """
         book.isbn10 = "1118008189"
         book.publisher = "Wiley"
-        book.save()
+        books.append(book)
         
         book = Book()
         book.uuid = "aac"
@@ -48,4 +49,11 @@ class Command(NoArgsCommand):
         """
         book.isbn10 = "1449399029"
         book.publisher = "O'reilly"
-        book.save()
+        books.append(book)
+
+        # add all the books that don't exist yet
+        for book in books:
+            try:
+                Book.objects.get(uuid=book.uuid)
+            except Book.DoesNotExist:
+                book.save()
