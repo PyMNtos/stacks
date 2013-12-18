@@ -31,7 +31,11 @@ class Command(NoArgsCommand):
         book.description = """
         Every day, more and more people want to learn some HTML and CSS. Joining the professional web designers and programmers are new audiences who need to know a little bit of code at work (update a content management system or e-commerce store) and those who want to make their personal blogs more attractive. Many books teaching HTML and CSS are dry and only written for those who want to become programmers, which is why this book takes an entirely new approach.
 
+<<<<<<< HEAD
         Introduces HTML and CSS in a way that makes them accessible to everyone--hobbyists, students, and professional--and it's full-color throughout
+=======
+        Introduces HTML and CSS in a way that makes them accessible to everyone--hobbyists, students, and professionals--and it's full-color throughout
+>>>>>>> upstream/master
         Utilizes information graphics and lifestyle photography to explain the topics in a simple way that is engaging
         Boasts a unique structure that allows you to progress through the chapters from beginning to end or just dip into topics of particular interest at your leisure
         """

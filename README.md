@@ -20,3 +20,4 @@ Installation instructions are located in:
     ./docs/installation.md
 
 Do NOT use the requirements.txt file in the root of the project as this is used for Heroku.
+
