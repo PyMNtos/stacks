@@ -6,7 +6,8 @@ local_settings.py
 
 # IDE generated files #
 #######################
-.idea
+.idea/*
+*.iml
 
 # Logs and databases #
 ######################
