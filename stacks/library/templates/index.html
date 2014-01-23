@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+  <h1>{{ section.title }} <small>{{ section.subtitle }}</small></h1>
+  Welcome to stacks! This will serve as our landing page until something better
+  is implemented. 
+  <hr>
+  <ul class="horizontal-carousel">
+    {% for book in books %}
+    <li>
+      <a href="">
+	<img src="{{book.thumb}}">
+      </a>
+      {{book.title}}
+    </li>
+    {% endfor %}
+  </ul>
+  <hr>
+  <input type="text" data-role="search"></input>
+</div>
+{% endblock %}
+

@@ -5,18 +5,18 @@
 <h1>Books</h1>
 
 <table>
-   <tr>
-       <td>Book</td>
-       <td>Author(s)</td>
-       <td></td>
-   </tr>
-    {% for book in books %}
-        <tr>
-            <td>{{ book.title }}</td>
-            <td>{{ book.authors }}</td>
-            <td></td>
-        </tr>
-    {% endfor %}
+  <tr>
+    <td>Book</td>
+    <td>Author(s)</td>
+    <td></td>
+  </tr>
+  {% for book in books %}
+  <tr>
+    <td>{{ book.title }}</td>
+    <td>{{ book.authors }}</td>
+    <td></td>
+  </tr>
+  {% endfor %}
 </table>
 
 {% endblock %}
