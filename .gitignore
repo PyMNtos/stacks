@@ -6,13 +6,21 @@ local_settings.py
 
 # IDE generated files #
 #######################
-.idea
+.idea/*
+*.iml
 
 # Logs and databases #
 ######################
 *.log
 *.sql
 *.sqlite
+*.sqlite3
+
+# Emacs #
+#########
+*~
+\#*#
+
 
 # OS generated files #
 ######################
