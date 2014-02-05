@@ -6,9 +6,8 @@ This document assumes *nix type environment.
 Setup Basic Development Tools
 -----------------------------
 
-Follow the instructions for your OS on this wiki page:
+Follow the [instructions](https://github.com/PyMNtos/stacks/wiki/Dev-Environment-Setup) for your OS.
 
-    https://github.com/PyMNtos/stacks/wiki/Dev-Environment-Setup
 
 Install Dependencies
 --------------------
@@ -19,6 +18,8 @@ Install Postgres:
 
 Configuring Postgres
 --------------------
+
+If your system did not create a user for `postgres`, add one now.
 
 Log into Postgres and setup the password for the default `postgres` user:
 
