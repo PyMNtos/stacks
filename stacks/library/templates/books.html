@@ -4,19 +4,27 @@
 
 <h1>Books</h1>
 
-<table>
-   <tr>
-       <td>Book</td>
-       <td>Author(s)</td>
-       <td></td>
-   </tr>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Author(s)</th>
+        </tr>
+    </thead>
+    <tbody>
     {% for book in books %}
         <tr>
             <td>{{ book.title }}</td>
-            <td>{{ book.authors }}</td>
-            <td></td>
+            <td>
+                <ul>
+                {% for author in book.authors.all %}
+                    <li>{{ author }}</li>
+                {% endfor %}
+                </ul>
+            </td>
         </tr>
     {% endfor %}
+    </tbody>
 </table>
 
 {% endblock %}

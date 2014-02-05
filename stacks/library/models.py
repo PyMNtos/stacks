@@ -10,7 +10,7 @@ class LibraryUser(models.Model):
     phone = models.CharField(max_length=40, null=True)
 
     def __unicode__(self):
-        return '%s, %s' % (self.user.last_name, self.user.first_name)
+        return self.user.username
 
 
 class Author(models.Model):
