@@ -76,7 +76,7 @@ Then migrate with South:
 
     python manage.py migrate
 
-Boostraping some data
+Boostrapping some data
 ----------------
 
 After configuring the database, the next thing you'll likely want to do is add some data. While you could create some data to play around with by hand -- copy/pasting from Amazon, there's an easier way. 
